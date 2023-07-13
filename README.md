@@ -16,7 +16,7 @@
 
 6. [P5JS的程式開發](6.P5JS的程式開發.md)
 
-7. [METAPHYSICS的程式分析.md](7.METAPHYSICS的程式分析.md)
+7. [METAPHYSICS的程式分析](7.METAPHYSICS的程式分析.md)
 
 
 
