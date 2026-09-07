@@ -51,6 +51,17 @@
     border:none!important; box-shadow:none!important; margin:.3em auto;
   }
   body.portrait .reveal img.diagram{max-height:52vh;}
+  /* 示意圖與內文並存時，圖讓出高度（單獨一張圖時仍用 62vh） */
+  .reveal section:has(img.diagram):has(p:not(.figcap):not(.vidlinks)) img.diagram,
+  .reveal section:has(img.diagram):has(ul) img.diagram,
+  .reveal section:has(img.diagram):has(ol) img.diagram,
+  .reveal section:has(img.diagram):has(table) img.diagram,
+  .reveal section:has(img.diagram):has(blockquote) img.diagram,
+  .reveal section:has(img.diagram):has(pre) img.diagram{max-height:38vh;}
+  body.portrait .reveal section:has(img.diagram):has(p:not(.figcap):not(.vidlinks)) img.diagram,
+  body.portrait .reveal section:has(img.diagram):has(ul) img.diagram,
+  body.portrait .reveal section:has(img.diagram):has(table) img.diagram,
+  body.portrait .reveal section:has(img.diagram):has(pre) img.diagram{max-height:30vh;}
   /* 同一張裡圖片與內文並存時，圖片壓低一點，避免超出畫布 */
   .reveal section.compact img{max-height:38vh;}
   body.portrait .reveal section.compact img{max-height:28vh;}

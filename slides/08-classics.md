@@ -57,6 +57,8 @@ for (let i = 0; i < cols; i++) {
 grid = next;      // 整代一次換掉
 ```
 
+<img class="diagram" src="../images/diagrams/cellular-sync.svg" alt="整代同時更新">
+
 --
 
 ## 為什麼要用 next 這個新陣列
@@ -64,6 +66,8 @@ grid = next;      // 整代一次換掉
 如果直接改 `grid`，先算好的格子會影響到後算的格子。
 
 **整代必須同時更新。** 這是所有細胞自動機都要注意的地方。
+
+<img class="diagram" src="../images/diagrams/life-rules.svg" alt="生命遊戲的四條規則">
 
 --
 
@@ -223,6 +227,13 @@ function drawInvader(x, y, side) {
 
 > 遞迴給結構，機率給個性。
 
+
+--
+
+## 那個 0.8 是整件作品的靈魂<img class="diagram" src="../images/diagrams/invader-probability.png" alt="有無機率的差別">
+
+<p class="figcap">兩張都是真的跑出來的，程式差別只有一個 if</p>
+
 --
 
 ## 結果
@@ -280,6 +291,8 @@ while (n < maxIterations) {
 
 跑滿 100 次還沒逃逸，就當作屬於這個集合。
 
+<img class="diagram" src="../images/diagrams/mandelbrot-escape.svg" alt="逃逸判定">
+
 --
 
 ## 用逃逸速度上色
@@ -307,6 +320,8 @@ pixels[pix + 3] = 255;      // A
 每個像素佔 **4 個位置**（R、G、B、A），所以陣列長度是像素數的四倍，遍歷時步長要用 4。
 
 改完一定要呼叫 `updatePixels()` 寫回去，否則畫面不會變。
+
+<img class="diagram" src="../images/diagrams/pixels-array.svg" alt="pixels 陣列的結構">
 
 --
 
@@ -338,6 +353,8 @@ let cY = -0.3842;
 a = aa + cX;         // 這裡不再是 ca，而是固定的 cX
 b = bb + cY;
 ```
+
+<img class="diagram" src="../images/diagrams/mandelbrot-vs-julia.svg" alt="Mandelbrot 與 Julia 的差別">
 
 --
 
@@ -373,6 +390,8 @@ b = bb + cY;
 
 無窮次之後就得到 Sierpinski 三角形。
 
+<img class="diagram" src="../images/diagrams/koch-step.svg" alt="Koch 曲線的迭代">
+
 --
 
 ## 邊界無窮長，面積卻有限
@@ -407,6 +426,10 @@ function sierpinski(x, y, d) {
 2. **遞迴很吃資源** — 每次呼叫都要配記憶體，太深會堆疊溢位
 3. **避免重複計算** — 用記憶化或動態規劃存起來
 4. **想清楚怎麼拆問題** — 遞迴的本質是把大問題拆成同形狀的小問題
+
+<img class="diagram" src="../images/diagrams/sierpinski-levels.png" alt="不同終止條件下的遞迴深度">
+
+<p class="figcap">真的跑出來的四種終止條件</p>
 
 --
 
@@ -459,6 +482,8 @@ function drawKoch(x1, y1, x2, y2, n) {
 
 `dy/(2*sqrt(3))` 就是把中段的三分之一長度換算成尖端該突出多遠。**幾何算好了，程式只是抄下來。**
 
+<img class="diagram" src="../images/diagrams/koch-geometry.svg" alt="等邊三角形的高">
+
 --
 
 <!-- .slide: class="compact" -->
@@ -492,6 +517,11 @@ drawKoch(0,       -height/2,  width/-2, height/4,  iterations);
 
 > 《侏羅紀公園》裡用龍曲線來說明混沌理論。
 
+
+--
+
+## 它是摺出來的<img class="diagram" src="../images/diagrams/dragon-fold.svg" alt="龍曲線的摺紙由來">
+
 --
 
 ## 用 L-system 生成
@@ -513,6 +543,11 @@ function generate() {
   dragon = nextDragon;
 }
 ```
+
+
+--
+
+## 用 L-system 生成<img class="diagram" src="../images/diagrams/lsystem.svg" alt="L-system 的規則與呈現分離">
 
 --
 
@@ -577,6 +612,8 @@ if (r < 0.01) {          // 1%：莖
   nextY =  0.26*x + 0.24*y + 0.44;
 }
 ```
+
+<img class="diagram" src="../images/diagrams/ifs-fern.svg" alt="Barnsley 蕨的四個變換">
 
 --
 

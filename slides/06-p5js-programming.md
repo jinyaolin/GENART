@@ -41,6 +41,8 @@ function draw() {
 
 **這一行決定了作品是「動畫」還是「累積的軌跡」**，後面會用到。
 
+<img class="diagram" src="../images/diagrams/background-or-not.svg" alt="有無 background() 的差別">
+
 ---
 
 ## p5.js 的執行流程
@@ -249,6 +251,10 @@ function draw() {
 
 相鄰的取樣點之間變化很小，所以拿它來控制位置或顏色，動起來會自然，不會抖。
 
+<img class="diagram" src="../images/diagrams/perlin-vs-random.png" alt="random 與 noise 的比較">
+
+<p class="figcap">實際跑出來的兩條曲線，同一顆種子</p>
+
 --
 
 ## 讓時間推著它走
@@ -395,6 +401,13 @@ function sky() {
 > 想控制「東西聚在哪裡」，
 > 要調的是隨機值的分布。
 
+
+--
+
+## 那個 `pow(random, 0.25)` 是關鍵<img class="diagram" src="../images/diagrams/distribution.png" alt="兩種分布的比較">
+
+<p class="figcap">兩張都是真的跑 1400 條短線畫出來的</p>
+
 --
 
 ## 海面反光用 noise 做波紋
@@ -444,6 +457,8 @@ function boat() {
 `push()` 把目前的座標系與樣式存起來，`pop()` 還原。
 
 中間怎麼 `translate`、`rotate`、`scale` 都不會影響到外面。**畫每一個獨立物件都應該包在這一對裡面。**
+
+<img class="diagram" src="../images/diagrams/push-pop.svg" alt="push 與 pop 隔開座標系">
 
 --
 
@@ -535,6 +550,8 @@ noiseSeed(99);     // 同理，影響 noise()
 因為收藏家買到的那一張，必須**每次打開都長一樣**。
 
 沒有種子，同一枚 NFT 每次重新整理就變一張圖，那它就不是一件作品。
+
+<img class="diagram" src="../images/diagrams/seed.svg" alt="亂數種子的作用">
 
 ---
 

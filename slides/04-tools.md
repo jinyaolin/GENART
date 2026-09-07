@@ -27,6 +27,11 @@ Note:
 > 你真正在調的，
 > 是這兩者之間的那個比例。
 
+
+--
+
+## 配比才是作者的簽名<img class="diagram" src="../images/diagrams/random-vs-order.svg" alt="隨機與規律的配比光譜">
+
 --
 
 ## Brian Eno《Music for Airports》
@@ -42,6 +47,8 @@ Note:
 一組簡單的規則，可以生成極度複雜而豐富的結果。
 
 **規則的簡單程度，和結果的複雜程度沒有關係。**
+
+<img class="diagram" src="../images/diagrams/simple-to-complex.svg" alt="簡單規則與複雜結果">
 
 --
 
@@ -73,6 +80,8 @@ Note:
 | **Processing** | Java | 想做視覺化作品、能接受 Java |
 | **openFrameworks** | C++ | 已經熟 C++，要做複雜或專業的作品 |
 | **p5.js** | JavaScript | 想做網頁上的互動視覺化 |
+
+<img class="diagram" src="../images/diagrams/tools-compare.svg" alt="三個工具的比較">
 
 --
 
@@ -126,6 +135,8 @@ Note:
 
 **使用者互動** — 讓作品回應點擊、滑動、鍵盤輸入，或時間、光線、聲音這些環境變化
 
+<img class="diagram" src="../images/diagrams/code-can-do.svg" alt="程式能做的三件事">
+
 --
 
 ## 程式也是實驗的工具
@@ -169,6 +180,8 @@ Note:
 **互動資料視覺化** — 讓使用者自己操作，探索一組複雜的經濟或社群網路資料
 
 **動態資料視覺化** — 呈現風暴、海潮這類自然現象，或化學反應、生物演化這類科學過程
+
+<img class="diagram" src="../images/diagrams/dataviz-genart.svg" alt="資料視覺化與生成式藝術">
 
 ---
 

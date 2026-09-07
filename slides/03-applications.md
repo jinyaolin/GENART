@@ -21,6 +21,8 @@ Note:
 | 遊戲 | 地形、關卡、劇情、角色 |
 | 虛擬實境 | 即時生成的整個世界 |
 
+<img class="diagram" src="../images/diagrams/applications-map.svg" alt="六個產業共用同一套方法">
+
 ---
 
 ## 視覺藝術與設計
@@ -41,6 +43,10 @@ Note:
 
 **L-system** 是一種基於規則的系統，用來模擬自然界的成長過程，可以長出樹木或珊瑚這類結構。
 
+<img class="diagram" src="../images/diagrams/lsystem-tree.svg" alt="L-system 長出的樹">
+
+<p class="figcap">同一條規則，改層數就長出不同的樹</p>
+
 --
 
 ## 動態影像
@@ -60,6 +66,11 @@ Note:
 > 這一類作品沒有觀眾就不完整。
 > 生成的來源換成了人。
 
+
+--
+
+## 互動裝置<img class="diagram" src="../images/diagrams/interactive-installation.svg" alt="互動裝置的回饋迴圈">
+
 ---
 
 ## 建築與都市設計
@@ -71,6 +82,8 @@ Note:
 演算法依照地理位置、建築用途與環境因素（例如日照角度），去最佳化建築的形狀與佈局。
 
 目標是能源效率與舒適度，兩者通常互相衝突，需要取捨。
+
+<img class="diagram" src="../images/diagrams/architecture-optimize.svg" alt="建築最佳化的流程">
 
 --
 
@@ -99,6 +112,8 @@ Note:
 
 《阿凡達》的異世界景觀與生態系統，大量使用了生成式技術。
 
+<img class="diagram" src="../images/diagrams/particle-system.svg" alt="粒子系統">
+
 --
 
 ## 背景元素
@@ -124,6 +139,8 @@ Note:
 依照每個使用者的興趣與購買習慣生成不同的廣告。
 
 Spotify 的個人化歌單廣告就是這樣做的，依照你的音樂喜好推薦新歌與專輯。
+
+<img class="diagram" src="../images/diagrams/personalized-ads.svg" alt="同一支廣告的不同輸出">
 
 --
 
@@ -154,6 +171,8 @@ Spotify 的個人化歌單廣告就是這樣做的，依照你的音樂喜好推
 | 劇情事件 | RimWorld，每輪故事都不一樣 |
 | 生物角色 | No Man's Sky，無數種可能的物種 |
 
+<img class="diagram" src="../images/diagrams/game-procedural.svg" alt="遊戲裡的四種程序生成">
+
 --
 
 ## 為什麼遊戲特別需要它
@@ -163,6 +182,11 @@ Spotify 的個人化歌單廣告就是這樣做的，依照你的音樂喜好推
 程序生成把成本從「做內容」換成「做規則」。規則寫一次，世界可以無限大。
 
 > 代價是你得接受自己沒看過遊戲裡的每一個角落。
+
+
+--
+
+## 為什麼遊戲特別需要它<img class="diagram" src="../images/diagrams/procedural-cost.svg" alt="手工做內容與程序生成的成本曲線">
 
 ---
 

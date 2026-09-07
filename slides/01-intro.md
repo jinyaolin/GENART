@@ -19,6 +19,13 @@ Note:
 > 傳統繪畫：藝術家控制每一筆。
 > 生成式藝術：藝術家控制的是「產生每一筆的那條規則」。
 
+
+--
+
+## 一句話定義<img class="diagram" src="../images/diagrams/control-what.svg" alt="傳統藝術與生成式藝術的差別">
+
+<p class="figcap">藝術家控制的東西不一樣，作品的數量也就不一樣</p>
+
 --
 
 ## 這件事為什麼值得整整一學期
@@ -82,6 +89,8 @@ Note:
 | 電腦時代 | 1970–2000 | 大型主機、繪圖機 |
 | 數位與區塊鏈 | 2000– | 個人電腦、瀏覽器、鏈上雜湊 |
 
+<img class="diagram" src="../images/diagrams/genart-timeline.svg" alt="生成式藝術的三個階段">
+
 ---
 
 ## 階段一：先有隨機性，才有電腦
@@ -126,6 +135,11 @@ Note:
 
 > 這三件都不是電腦作品，
 > 但它們把「結果由系統與參與者決定」這件事先做完了。
+
+
+--
+
+## 隨機性與觀眾參與的三個經典<img class="diagram" src="../images/diagrams/three-classics.svg" alt="三件經典作品">
 
 ---
 
@@ -193,6 +207,11 @@ Note:
 > 限制長出風格：
 > 早期電腦藝術的線條感，很大一部分來自繪圖機這支筆。
 
+
+--
+
+## 這一代的共同點<img class="diagram" src="../images/diagrams/plotter.svg" alt="繪圖機時代的工作流程">
+
 ---
 
 ## 階段三：21 世紀
@@ -206,6 +225,8 @@ Note:
 **市場面**：區塊鏈與 NFT 讓藝術家可以直接把作品賣給收藏家，不必經過畫廊與經銷商。
 
 加上數位藝術本來就逐漸成為主流文化的一部分，觀眾的接受度在這十年間明顯提高。
+
+<img class="diagram" src="../images/diagrams/two-forces.svg" alt="技術面與市場面">
 
 --
 
@@ -290,6 +311,11 @@ Reas 的 Process 系列把作品寫成一段文字指令，任何人照著實作
 
 > 收藏家按下鑄造之前，
 > 沒有人看過那張圖，包括藝術家本人。
+
+
+--
+
+## Art Blocks 的運作方式<img class="diagram" src="../images/diagrams/artblocks-flow.svg" alt="Art Blocks 的鑄造流程">
 
 --
 

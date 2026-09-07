@@ -63,6 +63,8 @@ Note:
 
 一個管**長什麼樣**，一個管**往哪裡去**。整張畫面就是這兩件事的重複。
 
+<img class="diagram" src="../images/diagrams/metaphysics-architecture.svg" alt="leaf 與 spine 的分工">
+
 ---
 
 ## leaf：葉子
@@ -128,6 +130,11 @@ let py = -vertex_id / 20 * this.height * leafscale;
 > noise 給起伏，sin 給輪廓。
 > 兩個函數疊起來就是一片葉子。
 
+
+--
+
+## 那個 `sin()` 在做什麼<img class="diagram" src="../images/diagrams/leaf-shape.svg" alt="noise 與 sin 疊出葉形">
+
 --
 
 ## 從區域座標換到畫布座標
@@ -145,6 +152,8 @@ if (checkborder(realpos.x, realpos.y)) {
 ```
 
 順序是**縮放、旋轉、平移**，換順序結果就不一樣。
+
+<img class="diagram" src="../images/diagrams/transform-order.svg" alt="變換順序的差別">
 
 --
 
@@ -192,6 +201,10 @@ class spine {
 
 出界或壽命用完就標記為死亡，主程式停止畫它。**畫面的疏密由一群物件各自的生滅決定，沒有人去排它。**
 
+<img class="diagram" src="../images/diagrams/spine-life.svg" alt="spine 的生滅">
+
+<p class="figcap">長的活得久，淡的快死了</p>
+
 --
 
 ## 每一步怎麼走
@@ -230,6 +243,13 @@ this.vec.heading() + no * PI * spine_angle_range
 
 > 這就是雲手：
 > **重心不會瞬間換邊，它是轉過去的。**
+
+
+--
+
+## 差別在哪<img class="diagram" src="../images/diagrams/angle-accumulation.svg" alt="noise 當位置與當角度增量的差別">
+
+<p class="figcap">兩條都是同一組 noise 跑出來的</p>
 
 --
 
@@ -299,6 +319,8 @@ random_dec() {
 ```
 
 同一個雜湊切出兩段，各自初始化一個生成器，每次取值輪流用。
+
+<img class="diagram" src="../images/diagrams/sfc32.svg" alt="一個雜湊切成兩個生成器">
 
 --
 
@@ -370,6 +392,8 @@ function draw() {
 
 **階段一長東西，階段二做後製。** 兩件事分開，邏輯才不會纏在一起。
 
+<img class="diagram" src="../images/diagrams/metaphysics-pipeline.svg" alt="draw 的兩階段與三張畫布">
+
 --
 
 ## 其他五個函式
@@ -397,6 +421,8 @@ function draw() {
 畫面上物件很多，彼此重疊會糊掉。
 
 把畫布切成格子、記錄哪裡已經被佔用，新的物件要落點時先查一下。**這是讓密集畫面仍然看得出結構的常見手法。**
+
+<img class="diagram" src="../images/diagrams/collision-grid.svg" alt="碰撞測試用的格子陣列">
 
 ---
 

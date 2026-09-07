@@ -19,6 +19,11 @@ Note:
 > 差別只在食譜的執行者是人，演算法的執行者是電腦。
 > 電腦不會自己加鹽，你沒寫的它一定不做。
 
+
+--
+
+## 演算法就是食譜<img class="diagram" src="../images/diagrams/algorithm-recipe.svg" alt="演算法與食譜的對應">
+
 --
 
 ## 生成式藝術的核心是一支「可重複但不重現」的程式
@@ -57,6 +62,8 @@ Note:
 | 觀眾 | Lozano-Hemmer《光的身影》，影子與投影結合 |
 | 時間 | Brian Eno 的生成音樂，永遠不會用同樣的方式播兩次 |
 
+<img class="diagram" src="../images/diagrams/uncertainty-sources.svg" alt="不確定性的三種來源">
+
 ---
 
 ## 演算法無所不在
@@ -89,6 +96,8 @@ Note:
 3. **機率與統計** — 隨機演算法、機器學習的基礎
 4. **線性代數與微積分** — 進階演算法，尤其是機器學習
 
+<img class="diagram" src="../images/diagrams/math-logic.svg" alt="四塊數學與三塊邏輯">
+
 --
 
 ## 三塊邏輯
@@ -109,6 +118,8 @@ Note:
 | 鏈結串列 LinkedList | 插入刪除快 | 頻繁增刪的集合 |
 | 樹 Tree | 階層、一對多 | 二元搜尋樹、堆積 |
 | 圖 Graph | 節點加邊，任意關係 | 網路路由、社群網路 |
+
+<img class="diagram" src="../images/diagrams/data-structures.svg" alt="六種資料結構">
 
 --
 
@@ -135,6 +146,10 @@ Note:
 > 生成式藝術很常撞到這條線：
 > 想加細節，畫面就掉幀。這時候要動的是演算法，不是電腦。
 
+<img class="diagram" src="../images/diagrams/big-o.svg" alt="時間複雜度的成長曲線">
+
+<p class="figcap">n² 在 n=6 就用光預算</p>
+
 ---
 
 ## 排序與搜尋
@@ -146,6 +161,8 @@ Note:
 **泡沫排序** — 反覆掃過陣列，比較相鄰兩個元素，需要就交換。寫起來最簡單，但複雜度 `O(n²)`，資料一多就慢。
 
 **快速排序** — 分治法。挑一個基準元素，把陣列分成比它小與比它大的兩堆，再各自快速排序。複雜度 `O(n log n)`。
+
+<img class="diagram" src="../images/diagrams/sorting.svg" alt="兩種排序演算法">
 
 --
 
@@ -160,6 +177,11 @@ Note:
 
 複雜度 `O(log n)`。一百萬筆資料，最多找 20 次。
 
+
+--
+
+## 二分搜尋<img class="diagram" src="../images/diagrams/binary-search.svg" alt="二分搜尋每次砍掉一半">
+
 ---
 
 ## 圖形演算法
@@ -173,6 +195,13 @@ Note:
 **廣度優先搜尋（BFS）** — 先看完所有離起點最近的節點，再往外一圈。用佇列記錄。
 
 BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
+
+
+--
+
+## DFS 與 BFS<img class="diagram" src="../images/diagrams/dfs-bfs.svg" alt="深度優先與廣度優先的走訪順序">
+
+<p class="figcap">圈內數字是走訪順序</p>
 
 --
 
@@ -191,6 +220,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 把一個大問題拆成一系列小問題，把小問題的答案存進表格，避免重複計算。
 
 適用於具備**最佳子結構**（大問題的最佳解包含小問題的最佳解）與**重疊子問題**（同一個小問題被算很多次）的情況。
+
+<img class="diagram" src="../images/diagrams/dynamic-programming.svg" alt="動態規劃">
 
 --
 
@@ -221,6 +252,11 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 - **推薦系統** — 亞馬遜的商品、Netflix 的片單
 - **社群媒體** — 決定你的動態牆上出現什麼
 - **醫療** — 疾病預測、診斷、個人化療程
+
+
+--
+
+## 演算法在生活裡<img class="diagram" src="../images/diagrams/algorithms-daily.svg" alt="演算法的日常應用">
 
 ---
 
@@ -255,6 +291,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 | 學習 | 自己從經驗中學 | 要人寫程式教它 |
 | 損壞 | 能自我修復、自我組織 | 需要人維修 |
 
+<img class="diagram" src="../images/diagrams/brain-vs-computer.svg" alt="人腦與電腦的比較">
+
 --
 
 ## 一個神經元怎麼運作
@@ -266,6 +304,11 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 
 人腦裡每個神經元可能連著上千個其他神經元。
 
+
+--
+
+## 一個神經元怎麼運作<img class="diagram" src="../images/diagrams/neuron.svg" alt="神經元的運作">
+
 --
 
 ## 人工神經網路的三層
@@ -275,6 +318,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 **隱藏層** — 內部層。接收前一層所有節點的輸出，加權求和，再通過激活函數（ReLU、sigmoid）轉換。
 
 **輸出層** — 終點。節點數等於你要預測的類別數。
+
+<img class="diagram" src="../images/diagrams/neural-network.svg" alt="神經網路的三層結構">
 
 --
 
@@ -300,6 +345,11 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 
 重複，直到表現夠好或不再進步。
 
+
+--
+
+## 學習的五個步驟<img class="diagram" src="../images/diagrams/learning-loop.svg" alt="一次訓練迭代">
+
 ---
 
 ## 深度學習
@@ -311,6 +361,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 傳統機器學習需要**人工挑選並萃取特徵**。
 
 深度學習直接吃原始資料，**自己找出有用的特徵**。代價是要更多層、更多參數，也就要更多算力與資料。
+
+<img class="diagram" src="../images/diagrams/deep-vs-classic.svg" alt="深度學習與傳統機器學習">
 
 --
 
@@ -342,6 +394,11 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 
 > 這是一個沒有標準答案的訓練方式：
 > 老師和學生同時在進步。
+
+
+--
+
+## GAN：兩個網路互相對抗<img class="diagram" src="../images/diagrams/gan.svg" alt="生成器與鑑別器的對抗">
 
 --
 
