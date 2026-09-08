@@ -258,6 +258,8 @@ function drawInvader(x, y, side) {
 
 如果這個序列的模**不會**跑向無窮，就說 `c` 屬於 Mandelbrot 集。
 
+<img class="diagram" src="../images/diagrams/complex-plane.svg" alt="螢幕座標對應到複平面">
+
 --
 
 ## 複數平方怎麼寫
@@ -331,6 +333,14 @@ pixels[pix + 3] = 255;      // A
 
 <p class="figcap">自相似：放大任何一塊，都會看到與整體相似的形狀</p>
 
+--
+
+## 自相似：放大一千倍還是有細節
+
+<img class="diagram" src="../images/diagrams/mandelbrot-zoom.png" alt="Mandelbrot 的自相似縮放">
+
+<p class="figcap">真的算出來的四段放大，最深一段迭代 500 次</p>
+
 ---
 
 ## Julia Set
@@ -375,6 +385,13 @@ b = bb + cY;
 
 > 兩個數字，整張圖完全不同。
 > 這就是為什麼參數本身值得慢慢調。
+
+
+--
+
+## 換一組常數，換一個世界<img class="diagram" src="../images/diagrams/julia-grid.png" alt="六組 c 值的 Julia 集">
+
+<p class="figcap">六張都是同一條公式</p>
 
 ---
 
@@ -645,6 +662,13 @@ function drawPoint() {
 
 > 1% 的機率負責莖，85% 負責整株往上長，
 > 剩下 14% 生出兩側的小葉。
+
+
+--
+
+## 這叫迭代函數系統<img class="diagram" src="../images/diagrams/fern-points.png" alt="蕨葉隨點數浮現">
+
+<p class="figcap">真的跑出來的四種點數</p>
 
 --
 

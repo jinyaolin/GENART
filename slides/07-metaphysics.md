@@ -163,6 +163,10 @@ if (checkborder(realpos.x, realpos.y)) {
 
 這個值進到 `noise()` 裡，所以葉子每次被畫出來都有些許差異。**同一片葉子在生長過程中一直在微微變形。**
 
+<img class="diagram" src="../images/diagrams/leaf-iter.png" alt="葉子隨 iter 變形">
+
+<p class="figcap">真的用第 7 章的公式跑出來的四個 iter</p>
+
 --
 
 ## Metaphysics #0

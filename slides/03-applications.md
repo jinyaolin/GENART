@@ -100,6 +100,8 @@ Note:
 > 這裡的演算法不只是造形工具，
 > 它同時要負責讓那個造形站得住。
 
+<img class="diagram" src="../images/diagrams/shell-structure.svg" alt="生成建築的外殼與結構">
+
 ---
 
 ## 電影與動畫

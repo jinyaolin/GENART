@@ -40,6 +40,8 @@ Note:
 
 結果是永遠不會重複的音樂變化。作品是那組規則，不是任何一次播放。
 
+<img class="diagram" src="../images/diagrams/eno-loops.svg" alt="長度不同的循環永遠不會對齊">
+
 ---
 
 ## 原則二：從簡單到複雜
@@ -118,6 +120,11 @@ Note:
 3. **學習需求** — 你希望藉這件作品學會什麼
 
 > 沒有最好的工具，只有這次比較順手的工具。
+
+
+--
+
+## 怎麼選<img class="diagram" src="../images/diagrams/choose-tool.svg" alt="選工具的三個問題">
 
 ---
 

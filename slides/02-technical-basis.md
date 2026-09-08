@@ -32,6 +32,8 @@ Note:
 
 規則固定，但每次執行的結果都不一樣。
 
+<img class="diagram" src="../images/diagrams/repeatable-not-reproducible.svg" alt="可重複但不重現">
+
 --
 
 ## Casey Reas《Process 20》
@@ -137,6 +139,8 @@ Note:
 
 **空間複雜度** — 執行要佔多少記憶體，一樣用大 O 表示。
 
+<img class="diagram" src="../images/diagrams/time-vs-space.svg" alt="時間與空間的取捨">
+
 --
 
 ## 兩者經常要取捨
@@ -231,6 +235,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 - **最長共同子序列（LCS）** — `ABCD` 與 `ACDF` 的最長共同子序列是 `ACD`
 - **最短路徑** — Dijkstra、Floyd-Warshall
 
+<img class="diagram" src="../images/diagrams/knapsack.svg" alt="背包問題">
+
 ---
 
 ## 機器學習的三種演算法
@@ -266,6 +272,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 2. **生成式藝術** — GAN 生成的作品已經在藝術市場賣出驚人的價格
 3. **自動化決策** — 自動交易、自駕車、臨床決策支援
 4. **強化學習** — 讓機器從錯誤中學，找出最佳策略
+
+<img class="diagram" src="../images/diagrams/future-trends.svg" alt="四個值得關注的方向">
 
 ---
 
@@ -332,6 +340,11 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 - 輸出層 **10** 個節點，對應數字 0 到 9
 
 這就是一個基本的全連接前饋神經網路。
+
+
+--
+
+## 一個具體的例子<img class="diagram" src="../images/diagrams/mnist.svg" alt="辨識手寫數字的網路結構">
 
 --
 
@@ -425,6 +438,8 @@ BFS 常用來解最短路徑，或判斷兩個節點之間到底通不通。
 要在這個世界裡活得好，光懂技術怎麼運作還不夠。
 
 你還要理解它對生活的影響，以及可能帶來的倫理與社會問題。**需要的是跨領域的能力**，數學與電腦科學之外，還有藝術、社會學與倫理學。
+
+<img class="diagram" src="../images/diagrams/cross-disciplinary.svg" alt="需要的是跨領域的能力">
 
 ---
 

@@ -34,6 +34,8 @@ Note:
 
 你要判斷的不再是「這張好不好看」，而是「這條規則生出來的一千張，好不好看」。
 
+<img class="diagram" src="../images/diagrams/family.svg" alt="一條規則長出一整個族群">
+
 ---
 
 ## 先看三件作品
@@ -78,6 +80,11 @@ Note:
 
 > 收藏家買的不只是這張圖，
 > 而是「這條規則竟然能生出這個」的那份意外。
+
+
+--
+
+## 為什麼是這一張特別貴<img class="diagram" src="../images/diagrams/rarity.svg" alt="抽象之中的一張具象">
 
 ---
 
@@ -165,6 +172,11 @@ Note:
 
 > 這個問題在 1970 年代就被提出來了，
 > 到今天的生成式 AI 也還沒有標準答案。
+
+
+--
+
+## AARON 提出的問題<img class="diagram" src="../images/diagrams/authorship.svg" alt="作者身分的問題">
 
 --
 
@@ -351,6 +363,8 @@ Reas 的 Process 系列把作品寫成一段文字指令，任何人照著實作
 
 Art Blocks 與 SuperRare 這類策展平台要排隊數個月，還不一定排得到。fxhash 直接讓你鑄造。
 
+<img class="diagram" src="../images/diagrams/platform-compare.svg" alt="兩個平台的比較">
+
 --
 
 ## 開放的代價
@@ -361,6 +375,11 @@ Art Blocks 與 SuperRare 這類策展平台要排隊數個月，還不一定排�
 
 > 這是所有開放平台都會遇到的同一個題目：
 > 開放與品質，很難同時要。
+
+
+--
+
+## 開放的代價<img class="diagram" src="../images/diagrams/openness-tradeoff.svg" alt="開放與品質的取捨">
 
 --
 
@@ -398,6 +417,8 @@ Art Blocks 與 SuperRare 這類策展平台要排隊數個月，還不一定排�
 **羅丹《沉思者》**：姿勢、肌肉的紋理，同樣是刻意雕出來的。
 
 作品一旦完成就固定了。解讀可以很多樣，但那件東西本身不會再變。
+
+<img class="diagram" src="../images/diagrams/fixed-vs-living.svg" alt="完成之後會不會再變">
 
 --
 
